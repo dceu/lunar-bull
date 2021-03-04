@@ -12,9 +12,12 @@ class App extends React.Component {
     return(
       <div> 
         <div>header</div>
+        
         <Switch>
           <Route exact path='/' component = {HomePage} />
         </Switch>
+          
+        
       </div>
     );
   }
