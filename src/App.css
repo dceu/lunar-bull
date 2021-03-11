@@ -11,3 +11,7 @@ a {
 * {
   box-sizing:border-box;
 }
+
+.content-container {
+  margin-left: 200px;
+}
