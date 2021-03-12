@@ -1,0 +1,26 @@
+body { 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* padding: 20px 60px; */
+  display: flex;
+  align-items: flex-start;
+
+  h1{
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000
+}
+
+* { 
+  box-sizing:border-box;
+  margin: 0;
+}
+
+.content-container {
+  margin-left: 150px;
+  padding: 33px 0;
+}

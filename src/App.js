@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import React from 'react'
 import {Route, Switch} from 'react-router-dom'
 import HomePage from './pages/homepage/homepage.component.jsx';
