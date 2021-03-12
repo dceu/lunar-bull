@@ -1,0 +1,19 @@
+.directory{
+    display: flex;
+    flex-direction: column nowrap;
+    z-index: 6;
+    
+    .directory-option{
+        display: flex;
+        align-content: flex-end;
+        width: 100%;
+        align-self: flex-end;
+        background: #efefef;
+    
+        &:hover{
+            background-color: #efefef;
+        }
+    }
+
+    
+}

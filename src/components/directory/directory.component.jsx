@@ -42,7 +42,7 @@ class Directory extends React.Component {
     render() {
         return(
             <div className = 'directory'>
-                <h1>directory</h1>
+                
                 {this.state.pages.map( page => (
                     <div className="directory-option">
                     
