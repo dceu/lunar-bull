@@ -9,13 +9,20 @@
     max-width: 720px;
 
     .content-header{
-        border-bottom:aquamarine 5px;
+        color: aquamarine;
+        text-decoration: underline;
+        text-decoration-color: rosybrown;
         // border-color: aquamarine;
         font-size: 1.75rem;
+
+        &:hover {
+            font-style: italic;
+        }
     }
 
     .content-body{
         padding: 10px 5px;
         font-size: 1.25rem;
+        text-indent: 2rem;
     }
 }

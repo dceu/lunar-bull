@@ -7,10 +7,37 @@
     left: 0;
     margin: 0 150px 0 0;
     padding: 20px 25px;
+    max-width: 33%;
     // background-color: #000;
 
-    .home-utf{
-        font-size: 50px;
+    .logo{
+        display:flex;
+        flex-direction: row;
+        align-content: space-around;
+        justify-content: space-evenly;
+        width: 100%;
+        max-height: 100px;
+
+        .home-utf{
+            font-size: 5rem;
+        }
+
+        .heaven-utf {
+            font-size: 4.75rem;
+
+            &:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+
     }
+
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
 }
 
