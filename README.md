@@ -19,12 +19,7 @@ Principled transparency offered to potential employers.
 - [ ] splash image of project (code or animated minimized "featurette")
 
     
-## Blog
-    A blog, perhaps powered by HUGO, NEXTJS, GATSBY, etc.
-### Features:
-- [ ] splash
-- [ ] title, date
-- [ ] brief
+
 
 ## Bio
     One page bio focusing on origins, professional interests, and hobbies.
@@ -35,7 +30,7 @@ Principled transparency offered to potential employers.
 ## Contact
     Various methods of contact
 ### Features:
-- [ ] pwa option ? (mini messenger app to message me)
+
 - [ ]  email
 - [ ] socials
 ---
@@ -46,3 +41,11 @@ Principled transparency offered to potential employers.
 - [ ] Logo
 - [ ] Button
 - [ ] Card
+
+# Future Possible Extensions:
+## Page: Blog
+    A blog, perhaps powered by HUGO, NEXTJS, GATSBY, etc.
+### Features:
+- [ ] splash
+- [ ] title, date
+- [ ] brief
