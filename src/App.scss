@@ -1,29 +1,34 @@
-body { 
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* padding: 20px 60px; */
-  display: flex;
-  align-items: flex-start;
+$primary-color: #1d212c;
+$white-balance: #fffffe;
 
-  h1{
-    margin-bottom: 0;
-    padding-bottom: 0;
-    display: flex;
-    align-content: flex-end;
+.app-container {
+  display: flex;
+  justify-content: center;
+  height: 99vh;
+  align-items: center;
+  padding-top: 5px;
+  background-color: $white-balance;
+  ::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
   }
-}
 
-a {
-  text-decoration: none;
-  color: #000
-}
+  .page-container {
+    align-self: stretch;
+    height: 66vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.5vh 5vw 0 10vh;
+    overflow-y: scroll;
+    ::-webkit-scrollbar {
+      width: 0; /* Remove scrollbar space */
+      background: transparent; /* Optional: just make scrollbar invisible */
+    }
+  }
 
-* { 
-  box-sizing:border-box;
-  margin: 0;
-}
-
-.content-container {
-  margin-left: 180px;
-  padding: 33px 0;
-  display: flex;
+  .small {
+    align-self: center;
+    border: 1px solid black;
+  }
 }

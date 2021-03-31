@@ -1,0 +1,21 @@
+$header-font: "Abril Fatface", cursive;
+$hook-text: "Playfair Display", serif;
+$paragraph: "Raleway", sans-serif;
+$code-font: "Victor Mono", monospace;
+
+h1,
+h2 {
+  font-family: $header-font;
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.65rem;
+  font-family: $hook-text;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.35rem;
+  text-indent: 2vw;
+}

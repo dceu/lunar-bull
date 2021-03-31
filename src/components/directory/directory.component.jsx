@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './directory.styles.scss'
 import {Link} from 'react-router-dom'
 class Directory extends React.Component {
     constructor() {
@@ -46,7 +46,7 @@ class Directory extends React.Component {
                 {this.state.pages.map( page => (
                     <div className="directory-option">
                     
-                    <Link key = {page.id} to={page.url}>{page.title}</Link>
+                    <Link key = {page.id} to={page.url}>{page.title.toUpperCase()}</Link>
                     </div>
                 ))}
             </div>

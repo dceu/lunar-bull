@@ -1,43 +1,72 @@
 .header {
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-    align-content: flex-end;
-    position: fixed;
-    left: 0;
-    margin: 0 150px 0 0;
-    padding: 20px 25px;
-    max-width: 33%;
-    // background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  justify-self: center;
+  background-color: #1d212c;
 
-    .logo{
-        display:flex;
-        flex-direction: row;
-        align-content: space-around;
-        justify-content: space-evenly;
-        width: 100%;
-        max-height: 100px;
+  //   border: 1px dashed #2d212c;
+  // background-color: #000;
 
-        .home-utf{
-            font-size: 5rem;
-        }
+  .logo {
+    align-self: center;
+    padding: 1.75vh;
 
-        .heaven-utf {
-            font-size: 4.75rem;
-
-            &:hover{
-                background-color: black;
-                color: white;
-            }
-        }
-
+    a {
+      font-family: "Victor Mono", monospace;
+      font-style: italic;
+      font-size: 2.3rem;
+      color: #fffd61;
+      text-decoration-color: #ef5350;
     }
 
-    .contact-info{
-        display: flex;
-        flex-direction: column;
+    &:hover {
+      a:after {
+        content: "donovanuy";
+      }
     }
 
-    
+    a:after {
+      color: #fffd61;
+      content: "dceu";
+    }
+
+    a:before {
+      color: #4fc3f7;
+      content: "@";
+    }
+  }
+
+  .contact-info {
+    display: none;
+  }
+  //   &:hover {
+  //     background-color: #1d2c21;
+  //     color: #f1ffff;
+  //     .logo {
+  //       background-color: #444855;
+  //       display: flex;
+  //       flex-direction: row;
+  //       align-content: space-around;
+  //       justify-content: space-evenly;
+
+  //       a {
+  //         text-decoration: none;
+  //       }
+
+  //       .home-utf {
+  //         font-size: 5rem;
+  //       }
+
+  //       .heaven-utf {
+  //         font-size: 4.75rem;
+  //       }
+  //     }
+
+  //     .contact-info {
+  //       display: flex;
+  //       flex-direction: column;
+  //     }
+  //   }
 }
-

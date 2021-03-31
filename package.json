@@ -7,10 +7,12 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.3",
     "node-sass": "^5.0.0",
+    "normalize.css": "^8.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-socks": "^2.1.0",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
@@ -36,5 +38,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Principled transparency offered to potential employers.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dceu/lunar-bull.git"
+  },
+  "author": "",
+  "license": "ISC"
 }

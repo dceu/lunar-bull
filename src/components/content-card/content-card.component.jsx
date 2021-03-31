@@ -11,10 +11,12 @@ const lorem = {
 const ContentCard = ({id, heading, body, ...other}) => 
 
  (   
-    <div className ="content-card-`${id}`">
-        <div className = "content-header">
+    <div className ="content-card" id={`$id`}>
+        
+            <h3 className="content-header">
             {heading}
-            </div>
+            </h3>
+            
         <p className = "content-body">
             {body}
     {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aperiam omnis neque recusandae totam laudantium veniam maxime, sequi debitis animi? Voluptatum quis perspiciatis corporis autem in odio eaque beatae ad. */}

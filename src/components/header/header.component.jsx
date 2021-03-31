@@ -6,8 +6,8 @@ import './header.styles.scss'
 const Header = () => (
     <div className = 'header'>
         <div className = 'logo'>
-            <Link className='home-utf' to='/'>&#8962;</Link>
-            <div className='heaven-utf'>&#9776;</div>
+            <Link className='home' to='/home'></Link>
+            {/* <div className='heaven-utf'>&#9776;</div> */}
         </div>
         
         <Directory />

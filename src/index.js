@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'normalize.css';
 import './index.css';
 import App from './App';
 import {BrowserRouter} from 'react-router-dom'
+import {Breakpoint, BreakpointProvider} from 'react-socks';
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+  <BreakpointProvider>
+  <App />
+  </BreakpointProvider>
+    
   </BrowserRouter>,
   document.getElementById('root')
 );
