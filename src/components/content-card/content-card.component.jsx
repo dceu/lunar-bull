@@ -8,7 +8,7 @@ const lorem = {
 
 }
 
-const ContentCard = ({id, heading, body, ...other}) => 
+const ContentCard = ({id, heading, body, img, ...other}) => 
 
  (   
     <div className ="content-card" id={`$id`}>
