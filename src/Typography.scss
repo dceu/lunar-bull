@@ -14,8 +14,34 @@ h3 {
   font-family: $hook-text;
 }
 
-p {
+p,
+li {
   font-family: "Raleway", sans-serif;
   font-size: 1.35rem;
   text-indent: 2vw;
+}
+ul {
+  list-style-type: square;
+}
+li a {
+  background-color: #1d212c;
+  color: #4fc3f7;
+  text-decoration-color: #ffd95a;
+
+  &:hover {
+    font-family: "Victor Mono", monospace;
+    background-color: #444855;
+    color: #ff5c8d;
+    font-style: italic;
+
+    // a:before {
+    //   color: #ff5c8d;
+    //   content: "<(";
+    // }
+
+    // a:after {
+    //   color: #ff5c8d;
+    //   content: ")=>";
+    // }
+  }
 }
