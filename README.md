@@ -23,7 +23,7 @@ install package files
 
 ## Resume
 
-    One scrollable page that features companies I've worked for along with a description of ocupational responsibilities in a descending chronological order.
+    One scrollable page that features companies I've worked for along with a description of occupational responsibilities in a descending chronological order.
 
 ### Features:
 
@@ -51,7 +51,7 @@ install package files
 ### Features:
 
 - [ ] headshot
-- [ ] one long run on sentence.
+- [ ] one long run-on sentence.
 
 ## Contact
 
