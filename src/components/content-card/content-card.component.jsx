@@ -8,17 +8,17 @@ const lorem = {
 
 }
 
-const ContentCard = ({id, heading, body, img, ...other}) => 
+const ContentCard = ({id, heading, children, ...other}) => 
 
  (   
-    <div className ="content-card" id={`$id`}>
+     <div className ="content-card" id={`$id`}>
+     {heading ? <h3 className="content-header">{heading}</h3> : null}
+     
         
-            <h3 className="content-header">
-            {heading}
-            </h3>
+    
             
         <p className = "content-body">
-            {body}
+            {children}
     {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aperiam omnis neque recusandae totam laudantium veniam maxime, sequi debitis animi? Voluptatum quis perspiciatis corporis autem in odio eaque beatae ad. */}
 
         </p>
