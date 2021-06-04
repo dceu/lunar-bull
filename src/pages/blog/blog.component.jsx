@@ -7,9 +7,9 @@ const Blog = () =>
     (
         <div className="blog-page">
             <h1>Musings aplenty</h1>
-            <ContentCard id='0' heading='A Blog powered by NextJS (or kin)'
-             body=
-             'How can I funnel NextJS output into this component?' />
+            <ContentCard id='0' heading='A Blog powered by NextJS (or kin)'>
+            How can I funnel NextJS output into this component?
+                </ContentCard>
         </div>
     )
 

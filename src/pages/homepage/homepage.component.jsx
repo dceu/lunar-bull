@@ -49,7 +49,7 @@ class Homepage extends React.Component {
                 <div className="content-cards">
                 {this.state.content.map( card => (
                     
-                        <ContentCard key={card.id} heading={card.heading} body={card.inquiries}/>
+                        <ContentCard key={card.id} heading={card.heading} >{card.inquiries}</ContentCard>
                         
                 ))}
                 </div>
