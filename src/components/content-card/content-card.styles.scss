@@ -6,11 +6,11 @@
   justify-content: flex-start;
   max-width: 720px;
   border-left: #fffd61 0.1rem dashed;
-  border-bottom: #ff5c8d 0.12rem solid;
+  border-bottom: #ff5c8d 0.32rem solid;
 
   .content-header {
-    // display: inline-block;
-    align-content: center;
+    display: inline-block;
+    // align-content: center;
     right: -10px;
     color: #1d212c;
     background-color: #4fc3f7;
