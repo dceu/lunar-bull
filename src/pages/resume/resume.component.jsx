@@ -7,7 +7,7 @@ const Resume = () =>
     (
         <div className = "resume-page">
             <h1>Resume Page</h1>
-            <ContentCard id='0' heading='2021' >
+            <ContentCard id='0' heading='Last updated 06/2021' >
                 
                 <a href='/assets/resume/resume_2021_state.pdf'>
                 <img src='/assets/resume/resume_2021_state1024_1.jpg'></img>
