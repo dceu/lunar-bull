@@ -14,17 +14,19 @@ class Directory extends React.Component {
                     title: 'resume',
                     url: '/resume',
                     icon: '9784'
-                },{
-                    id: 1,
-                    title: 'projects',
-                    url: '/projects',
-                    icon: '9883'
-                },{
-                    id: 2,
-                    title: 'blog',
-                    url: '/blog',
-                    icon: '10081'
-                },{
+                },
+                //{
+                //    id: 1,
+                //     title: 'projects',
+                //     url: '/projects',
+                //     icon: '9883'
+                // },{
+                //     id: 2,
+                //     title: 'blog',
+                //     url: '/blog',
+                //     icon: '10081'
+                // },
+                {
                     id: 3,
                     title: 'bio',
                     url: '/bio',
