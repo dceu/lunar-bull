@@ -5,35 +5,38 @@ class Directory extends React.Component {
     constructor() {
         super();
 
-
+        // from live to sun-tiger
 
         this.state = {
             pages: [
+                // {
+                //     id: 0,
+                //     title: 'resume',
+                //     url: '/resume',
+                //     icon: '9784'
+                // },
+                //{
+                //    id: 1,
+                //     title: 'projects',
+                //     url: '/projects',
+                //     icon: '9883'
+                // },{
+                //     id: 2,
+                //     title: 'blog',
+                //     url: '/blog',
+                //     icon: '10081'
+                // },
                 {
                     id: 0,
-                    title: 'resume',
-                    url: '/resume',
-                    icon: '9784'
-                },{
+                    title: 'portfolio',
+                    url: '/portfolio',
+
+                },
+                {
                     id: 1,
-                    title: 'projects',
-                    url: '/projects',
-                    icon: '9883'
-                },{
-                    id: 2,
-                    title: 'blog',
-                    url: '/blog',
-                    icon: '10081'
-                },{
-                    id: 3,
-                    title: 'bio',
-                    url: '/bio',
-                    icon: '9778'
-                },{
-                    id: 4,
                     title: 'contact',
                     url: '/contact',
-                    icon: '128172'
+                    // icon: '128172'
                 },
             ]        
         }
