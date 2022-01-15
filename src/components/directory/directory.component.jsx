@@ -9,12 +9,12 @@ class Directory extends React.Component {
 
         this.state = {
             pages: [
-                {
-                    id: 0,
-                    title: 'resume',
-                    url: '/resume',
-                    icon: '9784'
-                },
+                // {
+                //     id: 0,
+                //     title: 'resume',
+                //     url: '/resume',
+                //     icon: '9784'
+                // },
                 //{
                 //    id: 1,
                 //     title: 'projects',
@@ -27,15 +27,16 @@ class Directory extends React.Component {
                 //     icon: '10081'
                 // },
                 {
-                    id: 3,
-                    title: 'bio',
-                    url: '/bio',
-                    icon: '9778'
-                },{
-                    id: 4,
+                    id: 0,
+                    title: 'portfolio',
+                    url: '/portfolio',
+
+                },
+                {
+                    id: 1,
                     title: 'contact',
                     url: '/contact',
-                    icon: '128172'
+                    // icon: '128172'
                 },
             ]        
         }
