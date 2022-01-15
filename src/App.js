@@ -11,9 +11,8 @@ import Resume from './pages/resume/resume.component.jsx';
 import Bio from './pages/bio/bio.component.jsx';
 import Blog from './pages/blog/blog.component.jsx';
 import Contact from './pages/contact/contact.component.jsx';
-import Projects from './pages/projects/projects.components.jsx'; // remove
 import Portfolio from './pages/portfolio/portfolio.components.jsx';
-import NotFound from './pages/not-found/not-found.component.jsx';
+import NotFound from './pages/not-found/not-found.component';
 
 // Components
 import Header from './components/header/header.component';
@@ -40,14 +39,14 @@ class App extends React.Component {
         <Breakpoint medium up>
         <div className="page-container">
         <Switch>
-          <Route exact path='/' component = {HomePage} />
+          <Route exact path='/home' component = {HomePage} />
           {/* <Route path = '/resume' component = {Resume} />  */}
           {/* <Route path = '/projects' component = {Projects} /> to be deleted */}
           {/* <Route path = '/portfolio' component = {Portfolio} /> */}
           <Route path = '/blog' component = {Blog} /> 
           {/* <Route path = '/bio' component = {Bio} />  */}
           <Route path = '/contact' component ={Contact} />
-          <Route component = {NotFound}/>
+          <Route component ={NotFound}/>
         </Switch> 
         </div>
         </Breakpoint>
