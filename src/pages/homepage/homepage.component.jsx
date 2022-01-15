@@ -43,7 +43,7 @@ class Homepage extends React.Component {
     render() {
         return(
             <div className = 'homepage'>
-                <h1 className= 'welcome'>"Hello World"</h1>
+                {/* <h1 className= 'welcome'>"Hello World"</h1> */}
                 {/* <h3> this is a subheading </h3>
                 <p>some basic text</p> */}
                 <div className="content-cards">
