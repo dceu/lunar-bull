@@ -1,6 +1,8 @@
 # Todo 01/2022
 
 - [ ] create mobile-friendly render
+- [ ] remove deprecated node-sass module, and install sass
+    -[x] remove node-sass
 - [x] remove h1s from Contact page, and house in ContentCard component
 - [ ] Create/Integrate Blogging Platform
     - [ ] add react-markdown to dependencies
