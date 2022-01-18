@@ -13,7 +13,7 @@ import ContentCard from '../../components/content-card/content-card.component'
 //         </div>
 //     )
 
-import md from '/assets/blog/test.md';
+import md from '../../blog/test.md';
 
 class Blog extends React.Component {
     constructor() {
