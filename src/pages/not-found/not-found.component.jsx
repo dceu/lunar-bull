@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import ContentCard from '../../components/content-card.component'
+import ContentCard from '../../components/content-card/content-card.component'
 
 const NotFound = () =>
     (

@@ -11,7 +11,7 @@ import Resume from './pages/resume/resume.component.jsx';
 import Bio from './pages/bio/bio.component.jsx';
 import Blog from './pages/blog/blog.component.jsx';
 import Contact from './pages/contact/contact.component.jsx';
-import Projects from './pages/projects/projects.components.jsx'; // remove
+// import Projects from './pages/projects/projects.components.jsx'; // remove
 import Portfolio from './pages/portfolio/portfolio.components.jsx';
 import NotFound from './pages/not-found/not-found.component';
 
