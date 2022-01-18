@@ -10,15 +10,15 @@
     "normalize.css": "^8.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-markdown": "^7.1.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^5.0.0",
     "react-socks": "^2.1.0",
-    "web-vitals": "^1.1.0",
-    "react-markdown": "^7.1.1"
+    "web-vitals": "^1.1.0"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -50,5 +50,8 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage":"https://www.donovanuy.com"
+  "homepage": "https://www.donovanuy.com",
+  "devDependencies": {
+    "sass": "^1.48.0"
+  }
 }
