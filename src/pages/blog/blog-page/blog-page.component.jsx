@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
-import './blog.styles.scss'
-import BlogArticle from '../../components/blog-article.component.jsx'
+import './blog-page.styles.scss'
+import BlogArticle from '../../../components/blog-article/blog-article.component.jsx'
 /*
 class Blog extends React.Component {
     constructor(props) {

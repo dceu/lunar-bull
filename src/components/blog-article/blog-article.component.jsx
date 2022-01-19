@@ -3,7 +3,7 @@ import './blog-article.styles.scss'
 import ContentCard from '../content-card/content-card.component.jsx'
 import ReactMarkdown from 'react-markdown'
 
-class BlogArticle extends Component {
+class BlogArticle extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -12,7 +12,7 @@ class BlogArticle extends Component {
         }
     }
     componentDidMount(){
-        const mdSource = require("../../../blog-src/test.md"); // mdSource to be passed as prop
+        const mdSource = require("../../blog-src/test.md"); // mdSource to be passed as prop
         fetch(mdSource)
             .then(res => {
                 return res.text()
