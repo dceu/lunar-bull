@@ -10,6 +10,7 @@
         - [ ] component for blog-top
         - [ ] create component for a blog post
             rely on CSS for styling, expecting react-markdown to return an html
+        - [ ] dynamically render a blog-page per markdown file in /blog
     - [ ] create directory structure for blog assets 
         - [ ] markdown
         - [ ] images
