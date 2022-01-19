@@ -1,17 +1,26 @@
 import React from 'react'
+import BlogPage from './blog-page/blog-page.component.jsx'
+import ContentCard from '../../components/content-card/content-card.component.jsx'
+import {Link} from 'react-router-dom'
 
-import './blog.styles.scss'
-import ContentCard from '../../components/content-card/content-card.component'
-
-const Blog = () => 
-    (
-        <div className="blog-page">
-            <h1>Musings aplenty</h1>
-            <ContentCard id='0' heading='A Blog powered by NextJS (or kin)'>
-            How can I funnel NextJS output into this component?
-                </ContentCard>
+class Blog extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            pages : ""        }
+    }
+    render (){
+        <div id ="blog-list">
+        {/*
+        blogList = glob blog-src/*.md
+        blogList.map((blogLink, idx) =>
+            <Link classname='blog-link' to='/{blogLink}' key= {idx}>
+            {blogLink}
+            </Link>
+        )
+        */}
         </div>
-    )
+    }
+}
 
-
-export default Blog;
+export default Blog
