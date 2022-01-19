@@ -1,60 +1,26 @@
-import React, {useState} from 'react'
+import React from 'react'
+import BlogPage from './blog-page/blog-page.component.jsx'
+import ContentCard from '../../components/content-card/content-card.component.jsx'
+import {Link} from 'react-router-dom'
 
-import './blog.styles.scss'
-import ContentCard from '../../components/content-card/content-card.component'
-//import {marked} from "marked";
-import ReactMarkdown from 'react-markdown'; 
-// const Blog = () => 
-//     (
-//         <div className="blog-page">
-//             <h1>Musings aplenty</h1>
-//             <ContentCard id='0' heading='A Blog powered by NextJS (or kin)'>
-//             How can I funnel NextJS output into this component?
-//                 </ContentCard>
-//         </div>
-//     )
-
-// import mdSource from '../../blog/test.md';
-
-//marked.setOptions({
-//   gfm: true
-//})
-
-
-class Blog extends React.Component {
-    constructor(props) {
+class Blog extends Component{
+    constructor(props){
         super(props);
         this.state = {
-            source: "",
-            markdown: "",
-        }
+            pages : ""        }
     }
-    componentDidMount(){
-        const mdSource = require("../../blog/test.md");
-        fetch(mdSource)
-            .then(res => {
-                return res.text()
-            })
-            .then(text => {
-                this.setState({
-                    source: mdSource,
-                    markdown: text
-                })
-            })
-    }
-    
-    render () {
-        const { source, markdown} = this.state;
-        return (
-            <ContentCard>
-           {/* <div dangerouslySetInnerHTML={{__html:compiled}} />*/}
-            <p>html: {source}</p>
-            <ReactMarkdown children={markdown}/>
-            <h6>The Above was compiled to HTML from the below:</h6>
-            <code>{markdown}</code>
-            </ContentCard>
-            
+    render (){
+        <div id ="blog-list">
+        {/*
+        blogList = glob blog-src/*.md
+        blogList.map((blogLink, idx) =>
+            <Link classname='blog-link' to='/{blogLink}' key= {idx}>
+            {blogLink}
+            </Link>
         )
+        */}
+        </div>
     }
 }
-export default Blog;
+
+export default Blog
