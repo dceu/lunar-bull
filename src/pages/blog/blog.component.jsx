@@ -20,7 +20,14 @@ class Blog extends React.Component{
     render (){
         const {blogList} = this.state;
         const blString = JSON.stringify(blogList);
-        
+       // make urls from list
+       let urls = new Array();
+      if (blogList) {urls.push(
+          blogList.map(str => '/blog/' + str.slice(0, -3))
+          ) }
+       //blogList.map( (str, idx )=> {
+        //  return urls[idx] = '/blog/' + str.slice(str.indexOf('.'));
+       //})
         return(
         <div className ='container'>
         <div id ="blog-list">
@@ -37,12 +44,13 @@ class Blog extends React.Component{
         </div>
         <BrowserRouter>
         <div id= 'rolodex'>
-            {this.state.blogList.map(b => (
-            <div>
-            <Link to={'blog/' + b}/>
-            <Route path={'blog/'+b} component={BlogPage} props={'../../../blog-src' + b}/> 
-            </div>
-            ))}
+            {
+            console.log(blogList)
+            }
+            {
+               console.log(urls) 
+           } 
+            
             
         </div>
         </BrowserRouter>
