@@ -40,14 +40,14 @@ class App extends React.Component {
         <Breakpoint medium up>
         <div className="page-container">
         <Switch>
-          <Route exact path='/home' component = {HomePage} />
+          <Route path='/home' component = {HomePage} />
           {/* <Route path = '/resume' component = {Resume} />  */}
           {/* <Route path = '/projects' component = {Projects} /> to be deleted */}
           {/* <Route path = '/portfolio' component = {Portfolio} /> */}
           <Route path = '/blog' component = {Blog} /> 
           {/* <Route path = '/bio' component = {Bio} />  */}
           <Route path = '/contact' component ={Contact} />
-          <Route component ={NotFound}/>
+          {/*<Route component ={NotFound}/>*/}
         </Switch> 
         </div>
         </Breakpoint>
