@@ -7,7 +7,7 @@ const fs = require('fs');
     
     function Post(title, md){
         this.title = title,
-        this.md = md
+        this.fileName = md
     }
     
     let fixCaseAddHyphen = (str) => {
@@ -68,8 +68,9 @@ const fs = require('fs');
             
             
             // Write to file
-            fs.writeFile('./blog-list.json',  JSON.stringify(blogs), 'utf8', err => {
-                if (err) console.log(err)
+            fs.writeFile('../blog-src/blog-list.json',  JSON.stringify(blogs), 'utf8', err => {
+                if (err) console.log(err);
+                else console.log(blogs);
             })
             }
         })
