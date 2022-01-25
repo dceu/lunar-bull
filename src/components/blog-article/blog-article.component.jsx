@@ -4,15 +4,19 @@ import ContentCard from '../content-card/content-card.component.jsx'
 import ReactMarkdown from 'react-markdown'
 
 class BlogArticle extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor({mdSource}) {
+        console.log('componentDidMount')
+        console.log(`${mdSource}`)
+        super({mdSource});
         this.state = {
             markdown: "",
-            source: ""
+            source:mdSource 
         }
     }
     componentDidMount(){
-        const mdSource = require("../../blog-src/test.md"); // mdSource to be passed as prop
+        console.log('in a A BlogArticle Component')
+        console.log(`markdown src: ${this.state.source}` )
+        const mdSource = require(`../../blog-src/${this.state.source}`); // mdSource to be passed as prop
         fetch(mdSource)
             .then(res => {
                 return res.text()
