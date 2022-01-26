@@ -7,13 +7,13 @@
 - [x] remove h1s from Contact page, and house in ContentCard component
 - [ ] Create/Integrate Blogging Platform
     - [x] add react-markdown to dependencies
-        - [ ] component for blog-top
-        - [ ] create component for a blog post
+        - [x] component for blog-top
+        - [x] create component for a blog post
             rely on CSS for styling, expecting react-markdown to return an html
         - [ ] dynamically render a blog-page per markdown file in /blog
-    - [ ] create directory structure for blog assets 
-        - [ ] markdown
+    - [x] create directory structure for blog assets 
+        - [x] markdown
         - [ ] images
         - [ ] other
 
-    - [ ] script that pulls "published" md from Google Drive
+    - [x] script that pulls "published" md from ~~Google Drive~~ src/blog-src/
