@@ -2,8 +2,8 @@ import React, {useState} from 'react'
 import './directory.styles.scss'
 import {Link} from 'react-router-dom'
 
-const Directory = ({viewable}) => {
-        const [ isViewable, setViewable ] = useState(viewable);
+const Directory = ({hidden}) => {
+        const [ isHidden, setHidden ] = useState(hidden);
         const [pages ] = 
         useState(
            [
@@ -29,10 +29,10 @@ const Directory = ({viewable}) => {
         );
 
         return(
-            <div className = {`directory ${isViewable ? "null": "hidden"}`}>
+            <div className = {`directory ${isHidden ? "hidden": ""}`}>
                 
                 {pages.map( page => (
-                    <div className="directory-option">
+                    <div className={`directory-option ${isHidden ? "hidden" : ""}`}>
                     
                     <Link key = {page.id} to={page.url}>{page.title.toUpperCase()}</Link>
                     </div>
