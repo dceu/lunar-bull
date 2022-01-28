@@ -8,6 +8,7 @@
     width: 100%;
     padding-top: 0;
     background-color: #1d212c;
+    z-index:99;
   }
   .header-top {
     width: 100%;
@@ -21,7 +22,7 @@
     a {
       font-family: "Victor Mono", monospace;
       font-style: italic;
-      font-size: 2.3rem;
+      font-size: 2.6rem;
       color: #fffd61;
       text-decoration-color: #ef5350;
     }
@@ -50,8 +51,10 @@
     width: 15%;
     border-left: 1px #fffffe solid;
     cursor: pointer;
+    transition: 0.2s;
     &:hover {
       background-color: #fffd61;
+      padding-top: 2px;
   
     .bar1, .bar2,.bar3 {
      background-color:#4fc3f7; 
@@ -64,26 +67,32 @@
    margin: 3px 0;
    transition: 0.4s;
   }
-  
-  /* Rotate first bar */
-  .change .bar1 {
-   -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-   transform: rotate(-45deg) translate(-9px, 6px) ;
+  .bar1 {
+    /* Rotate first bar */
+    &.change {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+    }
   }
+  .bar2 {
+    /* Fade out the second bar */
+    &.change {
+    opacity: 0;
+    }
+  } 
   
-  /* Fade out the second bar */
-  .change .bar2 {
-   opacity: 0;
-  }
-  
+  .bar3 {
   /* Rotate last bar */
-  .change .bar3 {
-   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-   transform: rotate(45deg) translate(-8px, -8px) ;
+    &.change  {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+    }
   }
-  .contact-info {
-    display: none;
-  }
+ // .hamburger {
+ //   &.change {
+ //     border-bottom: 1px #fffffe solid;
+ //   }
+ // }
 }
 
 @media (min-width: 601px){
