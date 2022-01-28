@@ -1,8 +1,16 @@
 @media (max-width: 600px){
-  
-  .directory{
-    display: none !important;
-  }
+ .directory{
+   //border-top: 1px #ff87ab solid;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: flex-start;
+   align-items: flex-end;
+   width: inherit;
+ } 
+ .directory-option {
+   padding-right: 16% ;
+   border-right: 1px #fffffe dashed;
+ }
 }
 
 .directory {
@@ -21,6 +29,7 @@
 
     a {
       font-family: "Victor Mono", monospace;
+      font-size: 1.6rem;
       color: #f1ffff;
       text-decoration: none;
       line-height: 5rem;
@@ -33,10 +42,11 @@
     // }
 
     &:hover {
-      background-color: #444855;
+      //background-color: #444855;
       font-style: italic;
       text-transform: lowercase;
       padding-bottom: 1vh;
+      padding-right: 5%;
 
       a {
         // background-color: #1d212c;
