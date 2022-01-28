@@ -5,11 +5,20 @@ import './header.styles.scss'
 import {Breakpoint} from 'react-socks'
 
 const Header = () => {
-   let [isToggled, setToggled] = useState('false'); 
+   let [dirOpen, setDirOpen] = useState(false); 
+   let [isChange, setChange] = useState(false);
+   const handleChange = () => {
+       console.log(`isChange ? : ${isChange}`);
+       setChange(prev => !prev);
+   }
    const handleToggle = ()=> {
-       console.log('Toggle: ' + isToggled);
-       setToggled(!isToggled);
-       this.forceUpdate();
+       console.log('dirOpen ? :' + dirOpen);
+       handleChange();
+       setDirOpen(prev => !prev);
+   }
+   
+   const renderDir = () => {
+       return (<Directory />)
    }
     return (
     <div className = 'header'>
@@ -18,16 +27,15 @@ const Header = () => {
             <Link className='home' to='/home'></Link>
             {/* <div className='heaven-utf'>&#9776;</div> */}
         </div>
-        <div className ='hamburger' onClick={handleToggle}>
-            <div className={`bar1 ${isToggled ? "change" : "null"}`}></div> 
-            <div className={`bar2 ${isToggled ? "change" : "null"}`}></div>
-            <div className={`bar3 ${isToggled ? "change" : "null"}`}></div>  
+        <div className ={`hamburger ${isChange ? "change" : ""}`} onClick={handleToggle}>
+            <div className={`bar1 ${isChange ? "change" : " "}`}></div> 
+            <div className={`bar2 ${isChange ? "change" : " "}`}></div>
+            <div className={`bar3 ${isChange ? "change" : " "}`}></div>  
         </div>
         </div>
-        
-        <Directory viewable={isToggled}/>
-       
-
+        {
+            dirOpen ? renderDir() : (null)
+        }
     </div>
 
 )
