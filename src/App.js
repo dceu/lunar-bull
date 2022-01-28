@@ -27,17 +27,8 @@ class App extends React.Component {
   render() {
     return(
       <div className="app-container"> 
-    
-      
+        <Header />
         
-        {/* <Header /> */}
-        <Breakpoint small up>
-          
-          <Header />
-          
-         
-        </Breakpoint>
-        <Breakpoint medium up>
         <div className="page-container">
         <Switch>
           <Route path='/home' component = {HomePage} />
@@ -50,16 +41,6 @@ class App extends React.Component {
           {/*<Route component ={NotFound}/>*/}
         </Switch> 
         </div>
-        </Breakpoint>
-        
-       
-        
-       
-        
-        
-        
-          
-        
       </div>
     );
   }
