@@ -1,6 +1,21 @@
 $primary-color: #1d212c;
 $white-balance: #fffffe;
 
+@media(max-width: 600px){
+  .app-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start !important;
+    align-items: flex-start;
+    padding-top : none !important;
+   background-color: $white-balance;
+   ::-webkit-scrollbar {
+     width: 0; /* Remove scrollbar space */
+     background: transparent; /* Optional: just make scrollbar invisible */
+  }
+}
+}
+@media(min-width: 601px){
 .app-container {
   display: flex;
   justify-content: center;
@@ -12,6 +27,7 @@ $white-balance: #fffffe;
     width: 0; /* Remove scrollbar space */
     background: transparent; /* Optional: just make scrollbar invisible */
   }
+}
 
   .page-container {
     align-self: stretch;
@@ -29,8 +45,4 @@ $white-balance: #fffffe;
     max-width: 720px;
   }
 
-  .small {
-    align-self: center;
-    border: 1px solid black;
-  }
 }
