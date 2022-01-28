@@ -1,10 +1,15 @@
 # Todo 01/2022
 
 - [ ] create mobile-friendly render:
-    - [ ] mobile-friendly header
-    - [ ] hamburger icon that toggles:
-        - [ ] visibility of directory
-        - [ ] 'x' instead of hamburger
+------------------------------------
+    - [ ] business-card style landing
+    - [ ] consistent themeing for blog and blog posts
+    - [ ] portfolio project cards
+    - [ ] blog title cards and navigation
+    - [x] mobile-friendly header
+    - [x] hamburger icon that toggles:
+        - [x] visibility of directory
+        - [x] 'x' instead of hamburger
 - [x] remove deprecated node-sass module, and install sass
     -[x] remove node-sass
     -[x] install sass to dev-dependencies
