@@ -1,5 +1,5 @@
 import React from 'react'
-
+import ReactMarkdown from 'react-markdown'
 import './content-card.styles.scss';
 
 const lorem = {
@@ -8,9 +8,27 @@ const lorem = {
 
 }
 
-const ContentCard = ({id, heading, children, ...other}) => 
+const ContentCard = ({id, heading, children, markdown, ...other}) => 
 
- (   
+{ 
+   if(markdown) return (
+    <>
+        <ReactMarkdown 
+            children ={markdown}
+            className="content-card"
+            components= {{
+                h1: ({node,className, ...props}) => 
+                <h1 className= "content-header" {...props}/>,
+                p: ({node, className, ...props}) => 
+                <p className= "content-body" {...props} />
+                
+            }}
+            />
+            
+    </>
+       )
+    
+    else return(   
      <div className ="content-card" id={`$id`}>
      {heading ? <h3 className="content-header">{heading}</h3> : null}
      
@@ -24,5 +42,5 @@ const ContentCard = ({id, heading, children, ...other}) =>
         </p>
     </div>
 )
-
+}
 export default ContentCard;
