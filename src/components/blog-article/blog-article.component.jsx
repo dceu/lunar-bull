@@ -32,9 +32,7 @@ class BlogArticle extends React.Component {
     render () {
         const {source, markdown} = this.state;
         return (
-            <ContentCard>
-            <ReactMarkdown children = {markdown} />
-            </ContentCard>
+            <ContentCard markdown = {markdown}/>
             )
         }
 }
