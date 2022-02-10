@@ -1,0 +1,66 @@
+// drawer.styles.scss
+
+@media (max-width: 600px) {
+    .drawer-container {
+        width: 100%;
+        align-self: stretch;
+       
+      &.open {
+           display: flex;
+           width: 100%;
+           align-items: space-around;
+           align-content: flex-start;
+           padding-top: 0;
+           background-color: #1d212c;
+           z-index: 100;
+           box-shadow: 2px 2px 2px grey;
+           align-items: stretch;
+           justify-content: space-around;
+           padding: 1.5vh;
+           flex-flow: row wrap;
+           overflow-x: scroll;
+           ::-webkit-scrollbar {
+            width: 0; /* Remove scrollbar space */
+            background: transparent; /* Optional: just make scrollbar invisible */
+           }
+           a {
+               display: inline-block;
+               background: #4fc3f7;
+               
+               &:hover {
+               cursor:pointer;
+               }
+           }
+      } 
+       
+       &.closed {
+           display: none;
+           transition-property: height;
+           transition-duration: 1.5s;
+           transition-timing-function: ease-in;
+           
+       }
+       
+    }
+    
+    #Open {
+       display: hidden;
+       position: absolute;
+       left: 50%;
+       &:hover {
+           display: block;
+           cursor: pointer;
+       }
+           
+    }
+}
+
+@media (max-width: 900px){
+    .drawer-container{
+        
+    
+        &.open{
+            resize: none;
+        }
+    }
+}
