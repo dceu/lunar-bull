@@ -18,9 +18,11 @@ const ContentCard = ({id, heading, children, markdown, ...other}) =>
             className="content-card"
             components= {{
                 h1: ({node,className, ...props}) => 
-                <h1 className= "content-header" {...props}/>,
+                <h3 className= "content-header" {...props}/>,
                 p: ({node, className, ...props}) => 
-                <p className= "content-body" {...props} />
+                <p className= "content-body" {...props} />,
+                h2: ({node, className, ...props}) =>
+                <h3 className = "segue" {...props}/>
                 
             }}
             />
