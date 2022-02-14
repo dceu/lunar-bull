@@ -13,9 +13,7 @@ const Drawer = ({pages}) => {
     return (
         <>
         <div className={`drawer-container ${isOpen ? 'open' : 'closed'}`}>
-            <div className= 'test' onClick={handleChange}>
-            
-            </div>
+           
                {
                    pages.map((page, idx) => (
                    <Link  key={idx} to={`/blog/${page.fileName}`} onClick={
