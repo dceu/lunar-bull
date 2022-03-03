@@ -1,7 +1,7 @@
 import React from 'react'
 import BlogPage from './blog-page/blog-page.component.jsx'
 import ContentCard from '../../components/content-card/content-card.component.jsx'
-import {Link, Route, BrowserRouter, Switch, Router, withRouter
+import {Link, Route, BrowserRouter, withRouter
 } from 'react-router-dom'
 import bloglist from '../../blog-src/blog-list.json';
 import Drawer from '../../components/drawer/drawer.component.jsx'
@@ -18,7 +18,7 @@ class Blog extends React.Component{
     render (){
         const {pages} = this.state;
         return(
-        <div className ='container'>
+        <>
             
             <BrowserRouter>
             <Drawer pages={pages} children=
@@ -41,7 +41,7 @@ class Blog extends React.Component{
                <div id="rolodex">
                </div>
             </BrowserRouter>
-        </div>
+        </>
         )
     }
 }

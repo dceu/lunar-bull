@@ -1,7 +1,7 @@
 
 @media(max-width: 600px){
   .content-card{
-    padding: 2vh;
+    padding: 2vh 0 2vh 2vh;
     
   }
      h1 {
@@ -26,11 +26,11 @@
   //   margin: 0 10px 25px 0;
   display: block;
   align-self: center;
-  min-width: 320px;
   max-width: 720px;
   border-left: #fffd61 0.1rem dashed;
   border-bottom: #ff87ab 0.22rem solid;
   width: 100%;
+  padding:  1vh 0 1vh 2vh ;
 
  
 
@@ -51,7 +51,7 @@
     //align-self: stretch;
     // background-color: #444855;
     margin-top: 0;
-    padding: 0 0 0 .95vh;
+    padding:  .95vh;
     font-size: 1.25rem;
     text-indent: 0;
   }
