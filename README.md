@@ -7,10 +7,16 @@ a transparency
 ***2022 branch is [sun-tiger](https://github.com/dceu/lunar-bull/tree/sun-tiger/)***
 
 
+
+> install package files
+
 ``` $ npm install```
-install package files
 
 **It's advised to keep this file open to keep track of to-do's**
+
+
+# Build blog-list.json
+``` $ node src/util/blogglob.js ```
 
 # Deploy
 merge to ***[live](https://github.com/dceu/lunar-bull/tree/live)*** branch when ready for deployment 
